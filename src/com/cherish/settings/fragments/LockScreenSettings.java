@@ -54,6 +54,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String DATE_FONT_SIZE  = "lockdate_font_size";
     private static final String LOCKOWNER_FONT_SIZE = "lockowner_font_size";
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker_category";
 	
 	static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -66,6 +67,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mOwnerInfoFontSize;
 	private CustomSeekBarPreference mCustomTextClockFontSize;
     private Preference mAODPref;
+    private Preference mFODIconPicker;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -102,6 +104,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        mFODIconPicker = (Preference) findPreference(FOD_ICON_PICKER_CATEGORY);
+        if (mFODIconPicker != null
+                && !getResources().getBoolean(com.android.internal.R.bool.config_supportsInDisplayFingerprint)) {
+            prefScreen.removePreference(mFODIconPicker);
+        }
     }
 
     @Override

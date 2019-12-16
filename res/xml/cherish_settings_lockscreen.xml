@@ -269,6 +269,13 @@
         android:title="@string/keyguard_show_battery_title"
         android:summary="@string/keyguard_show_battery_summary"
         android:fragment="com.cherish.settings.fragments.KeygaurdBatteryBar" />
+		
+	<!-- FOD icon picker -->
+    <Preference
+        android:key="fod_icon_picker_category"
+        android:title="@string/fod_icon_picker_title"
+        android:summary="@string/fod_icon_picker_summary"
+        android:fragment="com.cherish.settings.fragments.FODIconPickerFragment" />
 
   </PreferenceCategory>
 </PreferenceScreen>
