@@ -1173,4 +1173,8 @@
 	<!-- Screen off fod -->
     <string name="fod_gesture_title">Screen off fingerprint</string>
     <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
+	
+	<!-- FOD icon animation -->
+    <string name="fod_icon_animation_summary">Animate the FOD icon when turning on the screen</string>
+    <string name="fod_icon_animation">Animated FOD icon</string>
 </resources>
