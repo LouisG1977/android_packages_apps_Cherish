@@ -1176,5 +1176,9 @@
 	
 	<!-- FOD icon animation -->
     <string name="fod_icon_animation_summary">Animate the FOD icon when turning on the screen</string>
+    <string name="fod_icon_animation_effect_title">Select FOD icon animation effect</string>
     <string name="fod_icon_animation">Animated FOD icon</string>
+    <string name="fod_icon_animation_miui_aod">Xiaomi MIUI</string>
+    <string name="fod_icon_animation_zaid_oneui">Samsung OneUI 3</string>
+    <string name="fod_icon_animation_oneui2">Samsung OneUI 2</string>
 </resources>

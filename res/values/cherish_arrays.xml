@@ -1242,4 +1242,17 @@
         <item>21</item>
         <item>22</item>
     </string-array>
+	
+	<!-- FOD icon animations -->
+    <string-array name="fod_icon_animation_entries" translatable="false">
+        <item>@string/fod_icon_animation_miui_aod</item>
+        <item>@string/fod_icon_animation_zaid_oneui</item>
+        <item>@string/fod_icon_animation_oneui2</item>
+    </string-array>
+
+    <string-array name="fod_icon_animation_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
